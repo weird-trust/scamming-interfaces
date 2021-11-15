@@ -1,0 +1,35 @@
+// navigation
+
+.nav-item {
+  font-size: $medium;
+  transition: 0.5s;
+  color: #000000;
+
+  @include respond-to("large") {
+    font-size: $medium;
+  }
+}
+
+.nav-item {
+  font-family: $font-stack;
+  font-weight: 300;
+  display: block;
+  position: fixed;
+  z-index: 1000;
+}
+
+.left-item {
+  left: 10px;
+  transform: translateY(0%);
+}
+
+.right-item {
+  right: 10px;
+  transform: translateY(0%);
+}
+.top {
+  top: 10px;
+}
+.bottom {
+  bottom: 10px;
+}

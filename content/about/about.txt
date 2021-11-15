@@ -1,0 +1,61 @@
+Title: about
+
+----
+
+Text3: 5
+
+----
+
+Text4:
+
+HFBK Hamburg — (link: http://www.digitale-grafik.com text: Klasse Digitale Grafik )
+Masterthesis: (link: http://scamming-interfaces.robert-burtzik.de/ text: Scamming Interfaces) von (link: https://robert-burtzik.de text: Robert Burtzik)
+
+----
+
+Text8: 
+
+----
+
+Text:
+
+Typeface: Matter-Square; (link: displaay.net text: displaay.net)
+Images created with (link: https://de.wikipedia.org/wiki/Lidar text: Lidar-Technology)
+Renderings generated with (link: https://www.blender.org text: Blender)
+
+----
+
+Text9: 
+
+----
+
+Text10: 
+
+----
+
+Text5:
+
+(link: http://www--scam.me text: www--scam.me) was built between 
+Dez. 2020 / Feb. 2021;
+Last updated 04/02/2021 @ 9:30:31;
+CMS: (link: https://getkirby.com text: Kirby <3)
+Libraries: jQuery, (link: https://github.com/josephg/noisejs text: perlin.js), (link: https://p5js.org text: p5.js), (link: http://tachyons.io text: tachyons.css.toolkit)
+
+----
+
+Text6: 
+
+----
+
+Text2:
+
+Betreuende Professoren: (link: https://knoth-renner.com text: Konrad Renner, 
+Christoph Knoth), Dr. Friedrich von Borries
+
+Korrekturen und Austausch: 
+Prof. Dr. Silke Helmerdig, Klara Neubauer, Jenny 
+Starick, Simon Plaga
+
+----
+
+Text7: 

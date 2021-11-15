@@ -1,0 +1,189 @@
+// typography
+
+// Matter
+@font-face {
+  font-family: "Matter";
+  src: url("../fonts/MatterSQ-Regular.woff2") format("woff2"),
+    url("../fonts/MatterSQ-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Matter";
+  src: url("../fonts/MatterSQ-Medium.woff2") format("woff2"),
+    url("../fonts/MatterSQ-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Matter";
+  src: url("../fonts/MatterSQ-Light.woff2") format("woff2"),
+    url("../fonts/MatterSQ-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.h1-big {
+  font-size: $large;
+  line-height: $lh-large;
+  letter-spacing: $kern-large;
+  margin-top: 0rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-weight: 300;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.h1-start {
+  font-size: $xlarge;
+  line-height: $lh-xlarge;
+  letter-spacing: $kern-xlarge;
+  pointer-events: none;
+  font-weight: 300;
+}
+
+.mrxl {
+  margin-right: -0.3vw;
+}
+
+.mlxl {
+  margin-left: -0.8vw;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: $medium;
+  line-height: $lh-medium;
+  letter-spacing: $kern-medium;
+  font-weight: 300;
+  margin-top: 0rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+p {
+  font-size: $small;
+  line-height: $lh-small;
+  letter-spacing: $kern-small;
+  font-weight: 300;
+  margin-top: 0rem;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  transition: all 0.5s ease;
+  transition-delay: 50ms;
+}
+
+a {
+  font-size: $medium;
+  font-weight: 300;
+  letter-spacing: $kern-medium;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  text-decoration: none;
+  color: $primary-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-stack;
+  color: #111;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  transition: all 0.5s ease;
+  transition-delay: 50ms;
+}
+
+.kern {
+  font-size: 1.75vw;
+  line-height: 1;
+  font-family: $font-stack;
+}
+
+.f1-custom {
+  font-size: $large;
+  transition: 0.5s;
+
+  @include respond-to("large") {
+    font-size: $large;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style-type: "→ ";
+}
+
+.about a {
+  text-decoration: none;
+  background-color: $green-bg;
+  color: black;
+  font-size: $small;
+  line-height: $lh-small;
+  letter-spacing: $kern-small;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  transition: all 0.2s ease;
+}
+.about a:hover {
+  color: $green-bg;
+}
+
+.about a:active {
+  background-color: white;
+  color: $green-bg;
+}
+
+.about-big a {
+  text-decoration: none;
+  background-color: $green-bg;
+  color: white;
+  transition: all 0.2s ease;
+  line-height: 3.59vw;
+}
+.about-big a:hover {
+  color: $green-bg;
+  background-color: $green-bg;
+}
+
+.about-big a:active {
+  background-color: $green-bg;
+}
+
+.about-big a:visited {
+  background-color: $green-bg;
+}

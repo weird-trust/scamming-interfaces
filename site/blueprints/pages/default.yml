@@ -1,0 +1,54 @@
+title: default
+preset: default
+
+columns:
+  - width: 1/2
+    sections:
+      left-column:
+        type: fields
+        fields:
+          text3:
+            label: Chapter left
+            type: text
+            size: small
+          text4:
+            label: marginal column left
+            type: textarea
+            size: medium
+          text8:
+            label: marginal column left back
+            type: textarea
+            size: medium
+          text:
+            label: left column
+            type: textarea
+            size: large
+          text9:
+            label: left column back
+            type: textarea
+            size: large
+  - width: 1/2
+    sections:
+      right-column:
+        type: fields
+        fields:
+          text10:
+            label: Chapter right
+            type: text
+            size: small
+          text5:
+            label: marginal column right
+            type: textarea
+            size: medium
+          text6:
+            label: marginal column back right
+            type: textarea
+            size: medium
+          text2:
+            label: right column
+            type: textarea
+            size: large
+          text7:
+            label: right column back
+            type: textarea
+            size: large

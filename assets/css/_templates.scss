@@ -1,0 +1,958 @@
+// templates
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  min-height: 0;
+  min-width: 0;
+}
+.home-1 {
+  grid-area: 1 / 1 / 4 / 3;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2 {
+  grid-area: 1 / 3 / 4 / 5;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-1-left {
+  grid-area: 1 / 1 / 4 / 2;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2-right {
+  grid-area: 1 / 4 / 4 / 5;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-1-mid {
+  grid-area: 2 / 1 / 3 / 2;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2-mid {
+  grid-area: 2 / 4 / 3 / 5;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-1-right {
+  grid-area: 2 / 2 / 3 / 3;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2-left {
+  grid-area: 2 / 3 / 3 / 4;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-1-btl {
+  grid-area: 3 / 1 / 4 / 2;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-1-btr {
+  grid-area: 3 / 2 / 4 / 3;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2-btl {
+  grid-area: 3 / 3 / 4 / 4;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2-btr {
+  grid-area: 3 / 4 / 4 / 5;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-1-tl {
+  grid-area: 1 / 1 / 2 / 2;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-1-tr {
+  grid-area: 1 / 2 / 2 / 3;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2-tl {
+  grid-area: 1 / 3 / 2 / 4;
+  overflow: scroll;
+  min-width: 0;
+}
+.home-2-tr {
+  grid-area: 1 / 4 / 2 / 5;
+  overflow: scroll;
+  min-width: 0;
+}
+
+// scam.php
+
+.grid-scam {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr 1fr;
+  grid-template-rows: (0.5fr 2fr 0.5fr);
+  gap: 0px 0px;
+  min-height: 0;
+  min-width: 0;
+
+  grid-template-areas:
+    "one one two two"
+    "three four five five"
+    "three six seven seven";
+}
+
+.one {
+  grid-area: one;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.two {
+  grid-area: two;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.three {
+  grid-area: three;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.four {
+  grid-area: four;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.five {
+  grid-area: five;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.six {
+  grid-area: six;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.seven {
+  grid-area: seven;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.imgleft {
+  right: 0%;
+  width: 94vw;
+  transform: translate(-24%, 0%);
+  z-index: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  mix-blend-mode: difference;
+
+  @include respond-to("large") {
+    bottom: 0%;
+    left: 0%;
+  }
+}
+
+// Buttons.scam.php
+
+.btn-fix-top {
+  top: 7vh;
+  width: 60vw;
+  height: 3.5vh;
+  left: 0;
+}
+.btn-fix-btm {
+  bottom: 12vh;
+  width: 50vw;
+  height: 3.5vh;
+  right: 0;
+}
+
+.hover {
+  transition: 0.3s linear;
+}
+
+.hover:hover,
+.selected {
+  background-color: $green-bg;
+  color: $black-bg;
+  filter: blur(0.1rem);
+  border-radius: 5rem;
+}
+.hover:active {
+  background-color: $green-bg;
+  color: $black-bg;
+  filter: blur(0rem);
+  border-radius: 5rem;
+}
+
+// Hover Navigation
+
+.hover-black {
+  transition: 0.3s linear;
+  background-color: $green-bg;
+  color: $black-bg;
+  filter: blur(0.1rem);
+  border-radius: 5rem;
+}
+
+.hover-white {
+  transition: 0.3s linear;
+  background-color: $green-bg;
+  color: #fff;
+  filter: blur(0.1rem);
+  border-radius: 5rem;
+}
+
+.front {
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.86, 0.04, 0.58, 1);
+  grid-area: 1/1;
+}
+
+.front-h1 {
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.86, 0.04, 0.58, 1);
+  grid-area: 1/1;
+}
+.front-p {
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.86, 0.04, 0.58, 1);
+  grid-area: 1/1;
+}
+
+.slide-up {
+  transform: translateY(-100%);
+}
+
+.stack {
+  display: grid;
+  place-items: top;
+  grid-area: 1/1;
+}
+.back {
+  grid-area: 1/1;
+}
+
+// wertesysteme.php
+
+.grid-systems {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "one one two three"
+    "four five six seven"
+    "four eight nine ten";
+  min-height: 0;
+  min-width: 0;
+}
+
+.sys-vid-1 {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  transform: translate(-46%, -36%);
+}
+.sys-vid-2 {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  transform: translate(-46%, -36%);
+}
+.sys-vid-3 {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  transform: translate(-46%, -36%);
+}
+.sys-vid-4 {
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  transform: translate(-20%, 0%);
+}
+
+.one {
+  grid-area: one;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.two {
+  grid-area: two;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.three {
+  grid-area: three;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.five {
+  grid-area: five;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.six {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "sixup sixup sixup"
+    ". . .";
+  grid-area: six;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.sixup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "sixupone sixupone sixuptwo"
+    "sixdownthree sixdownfour sixdownfive";
+  grid-area: sixup;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.sixupone {
+  grid-area: sixupone;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.sixuptwo {
+  grid-area: sixuptwo;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.sixdownthree {
+  grid-area: sixdownthree;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.sixdownfour {
+  grid-area: sixdownfour;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.sixdownfive {
+  grid-area: sixdownfive;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.seven {
+  grid-area: seven;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.four {
+  grid-area: four;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.eight {
+  grid-area: eight;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.nine {
+  grid-area: nine;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.ten {
+  grid-area: ten;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.systems {
+  width: 40px;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+// generation.php
+
+.grid-generation {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "gen-1 gen-1 gen-2 gen-2"
+    "gen-3 gen-4 gen-5 gen-6"
+    "gen-3 gen-7 gen-8 gen-10";
+  min-height: 0;
+  min-width: 0;
+}
+
+.gen-1 {
+  grid-area: gen-1;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-2 {
+  grid-area: gen-2;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-3 {
+  grid-area: gen-3;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-4 {
+  grid-area: gen-4;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-5 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "gen-5-left gen-5-right"
+    "gen-5-left .";
+  grid-area: gen-5;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-5-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "gen-5-one gen-5-one"
+    "gen-5-two gen-5-two"
+    "gen-5-three gen-5-three"
+    "gen-5-four gen-5-four";
+  grid-area: gen-5-left;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-5-one {
+  grid-area: gen-5-one;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-5-two {
+  grid-area: gen-5-two;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-5-three {
+  grid-area: gen-5-three;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-5-four {
+  grid-area: gen-5-four;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-5-right {
+  grid-area: gen-5-right;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "gen-6-one"
+    "gen-6-two";
+  grid-area: gen-6;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-6-one {
+  grid-area: gen-6-one;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-6-two {
+  grid-area: gen-6-two;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-7 {
+  grid-area: gen-7;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-8 {
+  grid-area: gen-8;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.gen-10 {
+  grid-area: gen-10;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.imgrightgen {
+  bottom: 0%;
+  right: 0%;
+  transform: translate(50%, 30%);
+  z-index: 2;
+  opacity: 1;
+
+  transition: 0.5s;
+
+  @include respond-to("large") {
+    bottom: 0%;
+    right: 10%;
+  }
+}
+
+.imgrightgen:hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.imgrightgenearation {
+  bottom: 10%;
+  right: 14%;
+  width: 30vw;
+  transform: translate(50%, 30%);
+  z-index: 1;
+  opacity: 1;
+  transition: 0.5s;
+  mix-blend-mode: color;
+
+  @include respond-to("large") {
+    bottom: 14%;
+    right: 10%;
+  }
+}
+
+.imgrightgenearation:hover {
+  opacity: 0;
+}
+
+.gen-vid-1 {
+  max-height: 150%;
+  transform: translate(-25%, -10%);
+  object-fit: cover;
+}
+
+// scambaiter.php
+
+.grid-baiter {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "bait-1 bait-1 bait-2 bait-2"
+    "bait-7 bait-4 bait-5 bait-6"
+    "bait-7 bait-8 bait-9 bait-6"
+    "bait-11 bait-11 bait-12 bait-12";
+  min-height: 0;
+  min-width: 0;
+}
+
+.bait-1 {
+  grid-area: bait-1;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-2 {
+  grid-area: bait-2;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "bait-4-left bait-4-right";
+  grid-area: bait-4;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-4-left {
+  grid-area: bait-4-left;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-4-right {
+  grid-area: bait-4-right;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.bait-5 {
+  grid-area: bait-5;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-8 {
+  grid-area: bait-8;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-9 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "bait-9-left bait-9-right";
+  grid-area: bait-9;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-9-left {
+  grid-area: bait-9-left;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-9-right {
+  grid-area: bait-9-right;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-11 {
+  grid-area: bait-11;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-12 {
+  grid-area: bait-12;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-7 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "bait-7-middle"
+    ".";
+  grid-area: bait-7;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-7-middle {
+  grid-area: bait-7-middle;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.bait-6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.5fr 1.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "bait-6-middle"
+    ".";
+  grid-area: bait-6;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.bait-6-middle {
+  grid-area: bait-6-middle;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.bait-vid-1 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-29%, -14%);
+  object-fit: cover;
+  max-height: 135%;
+}
+.bait-vid-2 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-41%, -14%);
+  object-fit: cover;
+  max-height: 136%;
+}
+.bait-vid-7 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-31%, -8%);
+  object-fit: cover;
+  max-height: 109%;
+}
+
+// position.php
+
+.grid-position {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "position-1 position-1 position-2 position-21"
+    "position-3 position-4 position-5 position-5"
+    "position-3 position-6 position-5 position-5";
+  min-height: 0;
+  min-width: 0;
+}
+
+.position-1 {
+  grid-area: position-1;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.position-3 {
+  grid-area: position-3;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.position-4 {
+  grid-area: position-4;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.position-2 {
+  grid-area: position-2;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.position-21 {
+  grid-area: position-21;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.position-5 {
+  grid-area: position-5;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.position-6 {
+  grid-area: position-6;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.imgright {
+  top: 50%;
+  right: 0%;
+  transform: translate(30%, -37%);
+  z-index: 1;
+  pointer-events: none;
+  transition: 0.5s;
+
+  @include respond-to("large") {
+    top: 50%;
+    right: 20%;
+  }
+}
+
+.imgrightposition {
+  top: 55%;
+  right: 0%;
+  transform: translate(30%, -37%);
+  z-index: 1;
+  pointer-events: none;
+  transition: 0.5s;
+
+  @include respond-to("large") {
+    top: 50%;
+    right: 0%;
+  }
+}
+
+.pos-vid-1 {
+  height: 90vh;
+  // max-height: 150%;
+  transform: translate(-25%, -5%);
+  object-fit: cover;
+}
+
+// zukunft.php
+
+.grid-future {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 1.7fr 0.8fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "future-1 future-1 future-2 future-2"
+    "future-3 future-4 future-5 future-6"
+    "future-7 future-7 future-8 future-8";
+  min-height: 0;
+  min-width: 0;
+}
+
+.future-1 {
+  grid-area: future-1;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.future-2 {
+  grid-area: future-2;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.future-3 {
+  grid-area: future-3;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.future-4 {
+  grid-area: future-4;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.future-5 {
+  grid-area: future-5;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.future-6 {
+  grid-area: future-6;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.future-7 {
+  grid-area: future-7;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.future-8 {
+  grid-area: future-8;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.zuk-vid-1 {
+  max-height: 100%;
+  max-width: 280%;
+}
+
+//about.php
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.9fr 0.5fr;
+  gap: 0px 0px;
+  min-height: 0;
+  min-width: 0;
+  z-index: -1;
+}
+
+.about-left {
+  grid-area: 1 / 1 / 4 / 3;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.about-right {
+  grid-area: 1 / 3 / 4 / 5;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.left-bt {
+  grid-area: 3 / 1 / 4 / 2;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.middle-bt {
+  grid-area: 3 / 2 / 4 / 4;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.middle-third-right {
+  grid-area: 1 / 2 / 2 / 5;
+  overflow: scroll;
+  min-width: 0;
+}
+
+.left-top {
+  grid-area: 1 / 1 / 2 / 2;
+  overflow: scroll;
+  min-width: 0;
+}
